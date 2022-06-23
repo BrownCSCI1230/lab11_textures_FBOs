@@ -1,8 +1,13 @@
-# Lab 11: FBOs
+# Lab 11: Textures & FBOs
+
 This is a placeholder readme.
+
 ## Setup
+
 ## Intro
+
 ## Part 1
+
 Descriptive text here
 
 My favorite equation!
@@ -38,10 +43,12 @@ $$
 
 ## Part 2
 
-### Task 1:
+**Task 1:**
+
 Wow I can't believe there have been to tasks yet! Get to work!
 
 ## End
+
 Go get checked off by a TA!
 
 Here are some questions to answer:
