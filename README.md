@@ -61,6 +61,8 @@ Before we work with the texture, we need to bind it to the state machine using:
 
 `void glBindTexture(GLenum target, GLuint texture)`
 
+[Documentation](https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/glBindTexture.xhtml)
+
 <details>
   <summary>void:</summary>
 </details>
@@ -74,6 +76,8 @@ Before we work with the texture, we need to bind it to the state machine using:
 Now we have an empty texture sitting in the GL_TEXTURE_2D target in our state machine. Let’s fill it with our QImage using:
 
 `glTexImage2D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const void * data)`
+
+[Documentation](https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/glTexImage2D.xhtml)
 
 <details>
   <summary>void:</summary>
@@ -116,6 +120,8 @@ How do we set these parameters? The function to do so is:
 
 `void glTexParameteri(GLenum target, GLenum pname, GLint param)`
 
+[Documentation](https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/glTexParameter.xhtml)
+
 <details>
   <summary>void:</summary>
 </details>
@@ -131,7 +137,7 @@ How do we set these parameters? The function to do so is:
 
 |**_Task 5:_**|
 |:---|
-|Use this function to set the minimize and magnify filters to use linear interpolation|
+|Use this function to set the minify and magnify filters to use linear interpolation|
 
 |**_Task 6:_**|
 |:---|
@@ -162,6 +168,8 @@ To load a texture into a texture slot, the steps are:
 
 The first call is:
 `void glActiveTexture(GLenum texture)`
+
+[Documentation](https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/glActiveTexture.xhtml)
 
 <details>
   <summary>void:</summary>
@@ -232,6 +240,8 @@ The UV attribute tells us at what point in the sampled texture should each verte
 Now we want to set our fragment color to be our texture at our pre-selected UV coordinates. In GLSL, the function to sample a texture uniform which is of type sampler2D is:
 
 `vec4 texture(sampler2D sampler, vec2 UV)`
+
+[Documentation](https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/texture.xhtml)
 
 <details>
   <summary>vec4:</summary>
